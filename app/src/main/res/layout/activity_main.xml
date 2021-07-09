@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/thermometer" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:text="Did you know you can determine the temperature outside by counting the number chirps the cricket makes!!  Just count the number of chirps the one makes in 25 seconds and place that number in below box.."
+        android:textColor="#DCCBCB" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="   CHIRPS IN 25 SEC"
+        android:inputType="number"
+        android:textColor="#0D89EC"
+        android:textColorHint="#0996D6"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:text="calculate"
+        android:textColor="#1F3CDD"
+        app:backgroundTint="#6FD1DD" />
+
+    <TextView
+        android:id="@+id/tvRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:text="TextView"
+        android:textColor="#0D89EC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</androidx.appcompat.widget.LinearLayoutCompat>
